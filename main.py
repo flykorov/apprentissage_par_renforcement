@@ -140,7 +140,6 @@ def main():
             f"Seed: {track.seed}   (R = nouveau circuit, ESPACE = rejouer)",
             f"Vitesse: {car.speed:5.0f} px/s     Temps: {elapsed_time:5.1f}s",
             f"Position: {car.x:.2f}, {car.y:.2f}",
-            # f"Sensor Distance: {car.get_sensor_distance(track)}",
             f"Sensor Distance: {car.get_sensor_distances(track)}",
             f"Sensor Point: {car.get_sensor_points(track)}",
         ]

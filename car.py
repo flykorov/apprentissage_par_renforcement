@@ -179,14 +179,3 @@ class Car:
             _, point = track.raycast((self.x, self.y), world_angle, max_distance)
             points.append(point)
         return points
-
-    # def get_sensor_distance(self, track, max_distance=None) -> list:
-    #     max_distance = max_distance or self.SENSOR_MAX_DISTANCE
-    #     points = []
-    #     for rel_deg in self.SENSOR_ANGLES_DEG:
-    #         world_angle = self.angle + math.radians(rel_deg)
-    #         _, point = track.raycast((self.x, self.y), world_angle, max_distance)
-    #         points.append(
-    #             math.sqrt((point[0] - self.x) ** 2 + (point[1] - self.y) ** 2)
-    #         )
-    #     return points
